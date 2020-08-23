@@ -3,14 +3,9 @@ console.log("Apples");
 console.log("This is a statement");
 console.log("This is also a statement");
 
-function myFunc(name, weather, ...extraArgs) {
-    console.log("Hello " + name + ".");
-    console.log("It is " + weather + " today.");
-
-    for(let i = 0; i < extraArgs.length; i++) {
-        console.log("Extra Arg: " + extraArgs[i]);
-    }
+function myFunc(name) {
+    return ("Hello " + name + ".");
 }
 
-myFunc("Adam", "sunny", "one", "two", "three");
+console.log(myFunc("Adam"));
 
