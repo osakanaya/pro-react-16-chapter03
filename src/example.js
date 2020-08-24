@@ -1,17 +1,17 @@
-class MyData {
-    constructor() {
-        this.name = "Adam";
-        this.weather = "sunny";
+const myData = {
+    name: "Bob",
+    location: {
+        city: "Paris",
+        country: "France"
+    },
+    employment: {
+        title: "Manager",
+        dept: "Sales"
     }
+};
 
-    printMessages = () => {
-        console.log(`Hello ${this.name}.`);
-        console.log(`Today is ${this.weather}.`)
-    }
+function printDetails(data) {
+    console.log(`Name: ${data.name}, City: ${data.location.city}, Role: ${data.employment.title}`);
 }
 
-let myData = new MyData();
-let secondObject = { ...myData, weather: "cloudy"};
-
-console.log(`myDta: ${ myData.weather}, secondObject: ${ secondObject.weather }`);
-
+printDetails(myData);
