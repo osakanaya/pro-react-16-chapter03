@@ -11,4 +11,8 @@ class MyData {
 }
 
 let myData = new MyData();
-myData.printMessages();
+let secondObject = {};
+
+Object.assign(secondObject, myData);
+
+secondObject.printMessages();
