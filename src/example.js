@@ -27,3 +27,8 @@ function messageFunction(weather) {
 }
 
 messageFunction("raining");
+
+let daysInWeek = 7;
+let pi = 3.14;
+let hexValue = 0xFFFF;
+
