@@ -1,9 +1,12 @@
-let myArray = [100, "Adam", true];
-
-for(let i = 0; i < myArray.length; i++) {
-    console.log(`Index ${i}: ${myArray[i]}`);
+function printItems(numValue, stringValue, boolValue) {
+    console.log(`Number: ${numValue}`);
+    console.log(`String: ${stringValue}`);
+    console.log(`Boolean: ${boolValue}`);
 }
 
-console.log("---");
+let myArray = [100, "Adam", true];
 
-myArray.forEach((value, index) => console.log(`Index ${index}: ${myArray[index]}`));
+printItems(myArray[0], myArray[1], myArray[2]);
+
+printItems(...myArray);
+
