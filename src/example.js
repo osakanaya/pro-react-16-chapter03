@@ -10,8 +10,8 @@ const myData = {
     }
 };
 
-function printDetails(data) {
-    console.log(`Name: ${data.name}, City: ${data.location.city}, Role: ${data.employment.title}`);
+function printDetails({ name, location: { city }, employment: { title }}) {
+    console.log(`Name: ${name}, City: ${city}, Role: ${title}`);
 }
 
 printDetails(myData);
