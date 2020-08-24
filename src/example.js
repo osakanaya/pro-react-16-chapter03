@@ -3,9 +3,11 @@ console.log("Apples");
 console.log("This is a statement");
 console.log("This is also a statement");
 
-function myFunc(name) {
-    return ("Hello " + name + ".");
+function myFunc(nameFunction) {
+    return ("Hello " + nameFunction() + ".");
 }
 
-console.log(myFunc("Adam"));
+console.log(myFunc(function () {
+    return "Adam";
+}));
 
