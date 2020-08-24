@@ -14,3 +14,16 @@ function myFunc(name) {
 }
 
 console.log(myFunc("Adam"));
+
+let firstBool = true;
+let secondBool = false;
+
+let fistString = "This is a string";
+let secondString = "And so is this";
+
+function messageFunction(weather) {
+    let message = `It is ${weather} today`;
+    console.log(message);
+}
+
+messageFunction("raining");
