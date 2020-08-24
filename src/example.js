@@ -1,9 +1,12 @@
-let name = "Adam";
-
 let myData = {
-    name,
-    weather: "sunny"
-}
+    name: "Adam",
+    weather: "sunny",
+    printMessages: function() {
+        console.log(`Hello ${myData.name}.`);
+        console.log(`Today is ${myData.weather}.`);
+    }
+};
 
-console.log(`Hello ${myData.name}.`);
-console.log(`Today is ${myData.weather}.`);
+myData.printMessages();
+
+
