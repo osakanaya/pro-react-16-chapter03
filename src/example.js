@@ -1,3 +1,5 @@
-let myData1 = (5).toString() + String(5);
+let firstVal = "5";
+let secondVal = "5";
 
-console.log("Result: " + myData1);
+let result = Number(firstVal) + Number(secondVal);
+console.log("Result: " + result);
