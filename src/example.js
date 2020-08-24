@@ -7,7 +7,8 @@ function myFunc(nameFunction) {
     return ("Hello " + nameFunction() + ".");
 }
 
-console.log(myFunc(function () {
-    return "Adam";
-}));
+function printName(nameFunction, printFunction) {
+    printFunction(myFunc(nameFunction));
+}
 
+printName(function () { return "Adam"; }, console.log);
