@@ -3,8 +3,18 @@ console.log("Apples");
 console.log("This is a statement");
 console.log("This is also a statement");
 
-const myFunc = (nameFunction)  => ("Hello " + nameFunction() + ".");
+function messageFunction(name, weather) {
+    let message = "Hello, Adam";
 
-const printName = (nameFunction, printFunction) => printFunction(myFunc(nameFunction));
+    if (weather === "sunny") {
+        let message = "It is a nice day";
+        console.log(message);
+    } else {
+        let message = "It is " + weather + " today";
+        console.log(message);
+    }
 
-printName(function () { return "Adam"; }, console.log);
+    console.log(message);
+}
+
+messageFunction("Adam", "raining");
