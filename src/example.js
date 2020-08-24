@@ -11,8 +11,7 @@ class MyData {
 }
 
 let myData = new MyData();
-let secondObject = {};
+let secondObject = { ...myData, weather: "cloudy"};
 
-Object.assign(secondObject, myData);
+console.log(`myDta: ${ myData.weather}, secondObject: ${ secondObject.weather }`);
 
-secondObject.printMessages();
