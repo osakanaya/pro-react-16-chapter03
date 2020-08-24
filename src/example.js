@@ -1,34 +1,21 @@
-console.log("Hello");
-console.log("Apples");
-console.log("This is a statement");
-console.log("This is also a statement");
+let name = "Adam";
 
-function myFunc(name) {
-    let myLocalVar = "sunny";
-
-    let innerFunction = function () {
-        return ("Hello " + name + ". Today is " + myLocalVar + ".");
-    };
-
-    return innerFunction();
+if (name === "Adam") {
+    console.log("Name is Adam");
+} else if (name === "Jacqui") {
+    console.log("Name is Jacqui");
+} else {
+    console.log("Name is neither Adam or Jacqui");
 }
 
-console.log(myFunc("Adam"));
-
-let firstBool = true;
-let secondBool = false;
-
-let fistString = "This is a string";
-let secondString = "And so is this";
-
-function messageFunction(weather) {
-    let message = `It is ${weather} today`;
-    console.log(message);
+switch(name) {
+    case "Adam":
+        console.log("Name is Adam");
+        break;
+    case "Jacqui":
+        console.log("Name is Jacqui");
+        break;
+    default:
+        console.log("Name is neither Adam or Jacqui");
+        break;
 }
-
-messageFunction("raining");
-
-let daysInWeek = 7;
-let pi = 3.14;
-let hexValue = 0xFFFF;
-
